@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.3)
-project(PLACEHOLDER_PROJECT)
+project(Digital-Logic-Sim)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -9,19 +9,19 @@ file(GLOB_RECURSE HEADERS src/*.h)
 file(GLOB_RECURSE SRC src/*.cpp)
 
 add_executable(
-        PLACEHOLDER_PROJECT
+        Digital-Logic-Sim
         ${HEADERS}
         ${SRC}
 )
 
 target_link_libraries(
-        PLACEHOLDER_PROJECT
+        Digital-Logic-Sim
         PRIVATE
         SDL_ImGui_Template
 )
 
 target_include_directories(
-        PLACEHOLDER_PROJECT
+        Digital-Logic-Sim
         PRIVATE
         SDL_ImGui_Template
         src
