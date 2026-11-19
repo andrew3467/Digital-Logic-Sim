@@ -33,9 +33,3 @@ target_include_directories(
         external/SDL/include
         external/imgui
 )
-
-add_custom_command(TARGET SDL_ImGui_Template POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        $<TARGET_FILE:SDL3::SDL3>
-        $<TARGET_FILE_DIR:SDL_ImGui_Template>
-)
